@@ -68,7 +68,8 @@ def reset_list():
 
 right_frame = ttk.Frame(root, padding=10)
 right_frame.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
-entry_widgt = ttk.Entry(right_frame).pack(side=tk.TOP, fill=tk.BOTH, expand=True)
+entry_widgt = ttk.Entry(right_frame)
+entry_widgt.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
 
 ttk.Button(right_frame, text="Remover Letras",    command=remove_let).pack(side=tk.TOP, fill=tk.X, expand=True)
 ttk.Button(right_frame, text="Incluir Letras",    command=include_lt).pack(side=tk.TOP, fill=tk.X, expand=True)
@@ -78,20 +79,3 @@ ttk.Button(right_frame, text="Restaurar Lista",   command=reset_list).pack(side=
 # FILTER OPTIONS
 
 root.mainloop()
-
-'''
-right_frame = ttk.Frame(root, padding=10)
-entry_widgt = ttk.Entry(right_frame)
-remove_button = ttk.Button(right_frame, text="Remover Letras", command=remove)
-include_button = ttk.Button(right_frame, text="Incluir Letras", command=include)
-place_button = ttk.Button(right_frame, text="Posicionar Letras", command=place)
-removepos_button = ttk.Button(right_frame, text="Remover Posição", command=remove_pos)
-reset_button = ttk.Button(right_frame, text="Restaurar Lista", command=reset)
-
-right_frame.pack(side=tk.LEFT)
-entry_widgt.pack(side=tk.TOP, fill=tk.X)
-remove_button.pack(side=tk.TOP, fill=tk.X)
-include_button.pack(side=tk.TOP, fill=tk.X)
-place_button.pack(side=tk.TOP, fill=tk.X)
-removepos_button.pack(side=tk.TOP, fill=tk.X)
-reset_button.pack(side=tk.TOP, fill=tk.X)'''
